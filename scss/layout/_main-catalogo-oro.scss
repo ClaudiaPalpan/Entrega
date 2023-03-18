@@ -17,22 +17,20 @@
     }
     .categoria{
         grid-area: categoria;
-        p{
-            font-weight: 900;
-            padding: 20px;
-            font-size: 20px;
-        }
         .cat-opciones{
             display: flex;
             flex-wrap: wrap;   
         }
     }
-    .productos{
-        grid-area: productos;
-        p {
+    .subcategoria{
             font-weight: 900;
             padding: 20px;
             font-size: 20px;
         }
+    .productos{
+        grid-area: productos;
+    }
+    .subproducto{
+        @extend .subcategoria;
     }
 }

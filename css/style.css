@@ -9,26 +9,24 @@
   width: auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "carrusel" "categoria" "productos"; }
+  grid-template-areas: "carrusel"
+ "categoria"
+ "productos"; }
   .main-catalogo .carrusel {
     grid-area: carrusel; }
     .main-catalogo .carrusel .slide img {
       height: 35vh; }
   .main-catalogo .categoria {
     grid-area: categoria; }
-    .main-catalogo .categoria p {
-      font-weight: 900;
-      padding: 20px;
-      font-size: 20px; }
     .main-catalogo .categoria .cat-opciones {
       display: flex;
       flex-wrap: wrap; }
+  .main-catalogo .subcategoria, .main-catalogo .subproducto {
+    font-weight: 900;
+    padding: 20px;
+    font-size: 20px; }
   .main-catalogo .productos {
     grid-area: productos; }
-    .main-catalogo .productos p {
-      font-weight: 900;
-      padding: 20px;
-      font-size: 20px; }
 
 header {
   padding: 15px; }
