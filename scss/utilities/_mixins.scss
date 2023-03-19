@@ -1,0 +1,23 @@
+@mixin inicio-imagen($position, $size, $align, $padding){
+    background-position: $position;
+    background-size:  $size;
+    text-align:  $align;
+    padding:  $padding;
+}
+
+@mixin inicio-letra( $decoration, $weight, $size, $color,$background){
+    text-decoration: $decoration;
+    font-weight: $weight;
+    font-size:$size;
+    color: $color;
+    background-color: $background;
+}
+
+@mixin ayuda-card( $background, $radius, $display, $flex, $items, $justify){
+    background-color: $background;
+    border-radius:  $radius;
+    display: $display;
+    flex-direction: $flex;
+    align-items:  $items;
+    justify-content: $justify;
+}

@@ -9,9 +9,7 @@
   width: auto;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "carrusel"
- "categoria"
- "productos"; }
+  grid-template-areas: "carrusel" "categoria" "productos"; }
   .main-catalogo .carrusel {
     grid-area: carrusel; }
     .main-catalogo .carrusel .slide img {
@@ -29,7 +27,8 @@
     grid-area: productos; }
 
 header {
-  padding: 15px; }
+  padding: 15px;
+  background-color: white; }
   header .container {
     display: flex;
     justify-content: space-between;

@@ -7,16 +7,9 @@
     .imagen1{
         grid-area: imagen1;
         background-image: url(../assets/img/img1.jpg);
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 35%;
+        @include inicio-imagen(center,cover,center,35%);
         a{
-            text-decoration: none;
-            font-weight: 900;
-            font-size: 40px;
-            color: rgb(0, 0, 0);
-            background-color: rgba(255, 255, 255, 0.473);
+            @include inicio-letra(none, 900, 40px, black, rgba(255,255,255,0.473));
             &:hover{
                 font-size: 60px;
                 text-decoration: underline;
@@ -26,16 +19,9 @@
     .imagen2{
         grid-area: imagen2;
         background-image: url(../assets/img/img2.jpg);
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 35%;
+        @include inicio-imagen(center,cover,center,35%);
         a{
-            text-decoration: none;
-            font-weight: 900;
-            font-size: 40px;
-            color: rgb(0, 0, 0);
-            background-color: rgba(255, 255, 255, 0.473);
+            @include inicio-letra(none, 900, 40px, black, rgba(255,255,255,0.473));
             &:hover{
                 font-size: 60px;
                 text-decoration: underline;
