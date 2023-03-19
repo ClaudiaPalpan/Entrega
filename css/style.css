@@ -109,24 +109,40 @@ header {
       grid-template: repeat(2, 150px)/repeat(3, 190px);
       gap: 70px;
       justify-content: center;
-      align-content: center; }
+      align-content: center;
+      /*
+            .card{
+                @include ayuda-card(rgba(255, 255, 255, 0.829),20px,flex, column, center,center );
+                &:hover{
+                    background-color: rgb(92, 92, 92);
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 900;
+                    text-align: center;
+                    &:hover{
+                        font-size: 20px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            */ }
       .main-ayuda .section-ayuda .container-ayuda .card {
         background-color: rgba(255, 255, 255, 0.829);
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+        text-align: center; }
         .main-ayuda .section-ayuda .container-ayuda .card:hover {
-          background-color: #5c5c5c; }
-        .main-ayuda .section-ayuda .container-ayuda .card a {
-          text-decoration: none;
-          color: black;
-          font-weight: 900;
-          text-align: center; }
-          .main-ayuda .section-ayuda .container-ayuda .card a:hover {
-            font-size: 20px;
-            text-decoration: underline; }
+          background-color: #5c5c5c;
+          text-decoration: underline;
+          transform: scale(1.2); }
 
 .main-contacto {
   width: 100%;
@@ -287,9 +303,6 @@ footer {
     padding-top: 360px; }
   .main-inicio .imagen2 {
     padding-top: 360px; }
-  /*----ayuda-main----*/
-  .card {
-    background-color: rgba(255, 255, 255, 0.664); }
   /*----contacto-main----*/
   .main-contacto section .form-contacto {
     width: 70%;
@@ -390,8 +403,8 @@ footer {
     width: 25px;
     height: 25px; }
   /*----ayuda-main----*/
-  .card a:hover {
-    font-size: 18px; }
+  .card:hover {
+    font-size: 14px; }
   /*----contacto-main----*/
   .main-contacto {
     height: 650px; }
@@ -476,12 +489,8 @@ footer {
     .main-ayuda .section-ayuda .container-ayuda {
       grid-template: repeat(6, 60px)/repeat(1, 130px);
       gap: 20px; }
-      .main-ayuda .section-ayuda .container-ayuda .card a {
-        text-decoration: none;
-        color: black;
-        font-weight: 900;
-        font-size: 13px;
-        text-align: center; }
+      .main-ayuda .section-ayuda .container-ayuda .card {
+        font-size: 13px; }
   /*-----tienda-main----*/
   .main-tienda {
     height: 550px; }
@@ -524,9 +533,6 @@ footer {
     overflow: hidden;
     grid-template: repeat(2, 275px)/repeat(1, 375px);
     grid-template-areas: "imagen1" "imagen2"; }
-  /*----ayuda-main----*/
-  .main-ayuda .section-ayuda .container-ayuda .card a:hover {
-    font-size: 15px; }
   /*----sesion-main----*/
   .main-sesion section div .form-sesion fieldset {
     margin-left: 15px; }
