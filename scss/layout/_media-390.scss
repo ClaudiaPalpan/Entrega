@@ -75,6 +75,30 @@
             }
         }
     }
+
+    /*----sesion-main----*/
+    .main-sesion{
+        section{
+            display: flex;
+            flex-direction: column;
+            padding: 70px;
+            div{
+                text-align: center;
+                align-content: center;
+                h3{
+                    padding-left: 0px;
+                }
+                .form-sesion{
+                    padding-left: 0px;
+                    fieldset{
+                        margin-left: 20px;
+                    }.boton{
+                        margin-left: 70px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

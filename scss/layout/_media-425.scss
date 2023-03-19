@@ -54,7 +54,7 @@
     }
     /*----contacto-main----*/
     .main-contacto{
-        height: 600px;
+        height: 650px;
         section{
             padding-bottom: 20px;
             text-align: center;
@@ -83,12 +83,25 @@
                     padding-bottom: 20px;
                     padding-left: 10px;
                     text-align: center;
+                    fieldset{
+                        input{
+                            padding: 3px;
+                        }
+                    }
+                    .boton{
+                        border-radius: 50px;
+                        padding: 3px 15px;
+                        font-size: 12px;
+                        margin-left: 50px;
+                    }
                 }
                 .no-cuenta{
                     padding-bottom: 0px;
                 }
                 .btn-registrar{
-                    padding: 0px;
+                    padding: 5px 20px;
+                    font-size: 12px;
+                    margin-right: 20px;
                 }
             }
         }

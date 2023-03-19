@@ -2,6 +2,7 @@
     /*----inicio-main----*/
     .main-inicio{
         height: auto;
+        overflow: hidden;
         grid-template: repeat(2,275px)/repeat(1,375px);
         grid-template-areas: "imagen1" "imagen2";
     }
@@ -19,10 +20,13 @@
     /*----sesion-main----*/
     .main-sesion{
         section{
-            padding: 70px;
             div{
                 .form-sesion{
-                    padding-left: 15px;
+                    fieldset{
+                        margin-left: 15px;
+                    }.boton{
+                        margin-left: 60px;
+                    }
                 }
             }
         }

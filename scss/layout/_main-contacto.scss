@@ -20,11 +20,31 @@
             padding-left: 560px;
             padding-top: 40px;
             fieldset{
+                background-color: rgba(234, 241, 247, 0.753);
+                margin-bottom: 5px;
+                legend{
+                    font-weight: bolder;
+                    font-size: 23px;
+                }
                 .recuadros{
                     display:flex;
                     flex-direction: column;
                     padding: 10px;
                     font-weight: 900;
+                    input{
+                        padding: 3px;
+                    }
+                }
+            }
+            .boton{
+                color: white;
+                background-color: black;
+                border-radius: 50px;
+                padding: 5px 30px;
+                &:hover{
+                    color: black;
+                    font-weight: bold;
+                    background-color: rgba(121, 121, 121, 0.5);
                 }
             }
         }

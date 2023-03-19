@@ -23,6 +23,10 @@ header{
                         text-decoration: none;
                         color: black;
                         font-weight: 900;
+                        &:hover{
+                            font-size: 18px;
+                            text-decoration: underline;
+                        }
                     }
                 }
             }

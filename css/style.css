@@ -46,6 +46,9 @@ header {
         text-decoration: none;
         color: black;
         font-weight: 900; }
+        header .container .opciones ul li a:hover {
+          font-size: 18px;
+          text-decoration: underline; }
 
 .main-inicio {
   display: grid;
@@ -144,11 +147,28 @@ header {
       width: 70%;
       padding-left: 560px;
       padding-top: 40px; }
-      .main-contacto section .form-contacto fieldset .recuadros {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        font-weight: 900; }
+      .main-contacto section .form-contacto fieldset {
+        background-color: rgba(234, 241, 247, 0.753);
+        margin-bottom: 5px; }
+        .main-contacto section .form-contacto fieldset legend {
+          font-weight: bolder;
+          font-size: 23px; }
+        .main-contacto section .form-contacto fieldset .recuadros {
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          font-weight: 900; }
+          .main-contacto section .form-contacto fieldset .recuadros input {
+            padding: 3px; }
+      .main-contacto section .form-contacto .boton {
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        padding: 5px 30px; }
+        .main-contacto section .form-contacto .boton:hover {
+          color: black;
+          font-weight: bold;
+          background-color: rgba(121, 121, 121, 0.5); }
 
 .main-sesion {
   width: 100%;
@@ -169,13 +189,33 @@ header {
         width: 70%;
         padding-top: 40px;
         text-align: center; }
+        .main-sesion section div .form-sesion fieldset {
+          background-color: rgba(234, 241, 247, 0.753);
+          margin-bottom: 5px; }
+          .main-sesion section div .form-sesion fieldset input {
+            padding: 3px; }
+        .main-sesion section div .form-sesion .boton {
+          color: white;
+          background-color: black;
+          border-radius: 50px;
+          padding: 5px 30px; }
+          .main-sesion section div .form-sesion .boton:hover {
+            color: black;
+            font-weight: bold;
+            background-color: rgba(121, 121, 121, 0.5); }
       .main-sesion section div .no-cuenta {
         padding-bottom: 50px; }
       .main-sesion section div .btn-registrar {
-        padding-left: 55px;
-        padding-right: 55px;
+        padding: 5px 60px;
         position: relative;
-        left: 10px; }
+        left: 10px;
+        border-radius: 50px;
+        color: white;
+        background-color: black; }
+        .main-sesion section div .btn-registrar:hover {
+          color: black;
+          font-weight: bold;
+          background-color: rgba(121, 121, 121, 0.5); }
 
 .main-tienda {
   width: 100%;
@@ -354,7 +394,7 @@ footer {
     font-size: 18px; }
   /*----contacto-main----*/
   .main-contacto {
-    height: 600px; }
+    height: 650px; }
     .main-contacto section {
       padding-bottom: 20px;
       text-align: center; }
@@ -380,10 +420,19 @@ footer {
           padding-bottom: 20px;
           padding-left: 10px;
           text-align: center; }
+          .main-sesion section div .form-sesion fieldset input {
+            padding: 3px; }
+          .main-sesion section div .form-sesion .boton {
+            border-radius: 50px;
+            padding: 3px 15px;
+            font-size: 12px;
+            margin-left: 50px; }
         .main-sesion section div .no-cuenta {
           padding-bottom: 0px; }
         .main-sesion section div .btn-registrar {
-          padding: 0px; }
+          padding: 5px 20px;
+          font-size: 12px;
+          margin-right: 20px; }
   /*-----tienda-main----*/
   .main-tienda {
     height: 550px; }
@@ -450,29 +499,45 @@ footer {
         text-align: center;
         padding: 3px;
         font-weight: 500;
-        font-size: 14px; } }
+        font-size: 14px; }
+  /*----sesion-main----*/
+  .main-sesion section {
+    display: flex;
+    flex-direction: column;
+    padding: 70px; }
+    .main-sesion section div {
+      text-align: center;
+      align-content: center; }
+      .main-sesion section div h3 {
+        padding-left: 0px; }
+      .main-sesion section div .form-sesion {
+        padding-left: 0px; }
+        .main-sesion section div .form-sesion fieldset {
+          margin-left: 20px; }
+        .main-sesion section div .form-sesion .boton {
+          margin-left: 70px; } }
 
 @media (max-width: 375px) {
   /*----inicio-main----*/
   .main-inicio {
     height: auto;
+    overflow: hidden;
     grid-template: repeat(2, 275px)/repeat(1, 375px);
     grid-template-areas: "imagen1" "imagen2"; }
   /*----ayuda-main----*/
   .main-ayuda .section-ayuda .container-ayuda .card a:hover {
     font-size: 15px; }
   /*----sesion-main----*/
-  .main-sesion section {
-    padding: 70px; }
-    .main-sesion section div .form-sesion {
-      padding-left: 15px; } }
+  .main-sesion section div .form-sesion fieldset {
+    margin-left: 15px; }
+  .main-sesion section div .form-sesion .boton {
+    margin-left: 60px; } }
 
 @media (max-width: 320px) {
   /*----inicio-main----*/
   .main-inicio {
-    height: 550px;
     grid-template: repeat(2, 275px)/repeat(1, 320px);
     grid-template-areas: "imagen1" "imagen2"; }
   /*----sesion-main----*/
   .main-sesion section {
-    padding: 50px; } }
+    padding: 40px; } }
