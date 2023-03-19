@@ -20,24 +20,6 @@
             gap: 70px;
             justify-content: center;
             align-content: center;
-            /*
-            .card{
-                @include ayuda-card(rgba(255, 255, 255, 0.829),20px,flex, column, center,center );
-                &:hover{
-                    background-color: rgb(92, 92, 92);
-                }
-                a{
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 900;
-                    text-align: center;
-                    &:hover{
-                        font-size: 20px;
-                        text-decoration: underline;
-                    }
-                }
-            }
-            */
             .card{
                 @include ayuda-card(rgba(255, 255, 255, 0.829),20px,flex, column, center,center );
                 text-decoration: none;
