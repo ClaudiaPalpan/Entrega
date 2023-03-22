@@ -1,0 +1,33 @@
+.pagina-error{
+    height: 100vh;
+    background-image: radial-gradient(circle at 50% -20.71%, #e3d0e6 0, #e6cfe4 6.25%, #e9cee1 12.5%, #eccede 18.75%, #eecdda 25%, #f0cdd7 31.25%, #f1cdd4 37.5%, #f2cdd0 43.75%, #f2cdcd 50%, #f2cdca 56.25%, #f1cec7 62.5%, #f0cfc4 68.75%, #efcfc2 75%, #edd0c0 81.25%, #ead1be 87.5%, #e8d2bd 93.75%, #e5d3bc 100%);
+    .error{
+        width: 100%;
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        h2{
+            font-weight: 500;
+        }
+        h1{
+            font-weight: 900;
+            font-size: 100px;
+        }
+        p{
+            padding-bottom: 25px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border-radius: 50px;
+            padding: 10px 40px;
+            &:hover{
+                color: black;
+                font-weight: bold;
+                background-color: rgba(121, 121, 121, 0.5);
+            }
+        }
+    }
+}
